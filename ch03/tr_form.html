@@ -27,6 +27,7 @@
     </style>
 </head>
 <body>
+    <div class="container-md"100% wide until medium breakpoint></div>
     <header>
         <a href="#"><img src="../image/logo_adsrun.png" width="207" height="62"></a>
     </header>
@@ -95,23 +96,40 @@
             </div>
             <div>
                 <form>
-                    <table border="1">
-                        <tr>
-                            <th colspan="4">
-                                <h2>기본정보</h2>
-                            </th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>코드그룹<a style="color: red;">*</a></label><br>
-                                <select style="width: 100%; height: 30px">
-                                    <option>선택하세요</option>
-                                    <option>abcdefg</option>
-                                    <option>hijklmno</option>
-                                </select>
-                            </td>
-                            <td colspan="3"></td>
-                        </tr>
+                    <div class="row">
+                        <div class="col-md-5">기본정보</div>
+                    </div>
+                    <div class="row">코드그룹<a style="color: red;">*</a>
+                        <div class="col-md-3">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    선택하세요
+                                </button>
+                                    <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">abcdefg</a></li>
+                                    <li><a class="dropdown-item" href="#">hijklmno</a></li>
+                                    </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">코드<a style="color: red;">*</a></div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card">
+                            <div class="card-body">
+                                This is some text within a card body.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">자동생성</div>
+                    </div>
+                
+                    </div>    
+
+                    <div>
+
+                    </div>
                         <tr>
                             <td>
                                 <label>코드<a style="color: red;">*</a></label><br>
